@@ -24,12 +24,12 @@ The system is designed to support portability by using structured formats such a
 
 The system should meet the following quality goals:
 
-1\. \*\*Accuracy:\*\* Product identity, recall status, inspection result, and safety warning fields should match the source records.  
-2\. \*\*Availability:\*\* Consumers should be able to access the system when scanning a valid QR code.  
-3\. \*\*Performance:\*\* Most user requests should return results quickly enough to support real-time decision-making while shopping or inspecting inventory.  
-4\. \*\*Portability:\*\* Records should be available in consistent JSON format, with optional CSV export for appropriate users.  
-5\. \*\*Security and privacy:\*\* Public users should only see consumer-safe information, while supplier or regulator-only fields should require authentication.  
-6\. \*\*Traceability:\*\* Errors, failed lookups, data updates, and recall checks should be logged for later review.
+1\. **Accuracy:** Product identity, recall status, inspection result, and safety warning fields should match the source records.  
+2\. **Availability:** Consumers should be able to access the system when scanning a valid QR code.  
+3\. **Performance:** Most user requests should return results quickly enough to support real-time decision-making while shopping or inspecting inventory.  
+4\. **Portability:** Records should be available in consistent JSON format, with optional CSV export for appropriate users.  
+5\. **Security and privacy:** Public users should only see consumer-safe information, while supplier or regulator-only fields should require authentication.  
+6\. **Traceability:** Errors, failed lookups, data updates, and recall checks should be logged for later review.
 
 \---
 
@@ -94,7 +94,7 @@ The system should meet the following quality goals:
 
 The test plan will be implemented through a mix of manual review, automated testing, scheduled monitoring, and release checks.
 
-\#\#\# Development Stage
+### Development Stage
 
 During development, the team will create sample product records that include normal, missing, invalid, recalled, and unrecalled food batches. These records will be used to test both the API and frontend before real data is connected. Backend validation will check required fields, date formats, recall status values, and JSON schema consistency.
 
