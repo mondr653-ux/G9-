@@ -6,7 +6,7 @@ This test plan defines the expected quality, reliability, and performance standa
 
 The main goal is to ensure that users can access accurate, current, portable, and understandable food safety information through a stable API and frontend interface.
 
-\---
+---
 
 ## 2\. System Overview
 
