@@ -1,6 +1,6 @@
-\# QR-Code Food Safety Information System – Test Plan
+# QR-Code Food Safety Information System – Test Plan
 
-\#\# 1\. Purpose
+## 1\. Purpose
 
 This test plan defines the expected quality, reliability, and performance standards for the QR-Code Food Safety Information System. The system allows consumers, food suppliers, retailers, and regulators to scan a QR code on a food product and retrieve structured safety, recall, origin, and supply-chain information. This document is intended to guide implementation and serve as a living quality-control reference for ongoing maintenance.
 
@@ -8,19 +8,19 @@ The main goal is to ensure that users can access accurate, current, portable, an
 
 \---
 
-\#\# 2\. System Overview
+## 2\. System Overview
 
 The information system has three major parts:
 
-\- \*\*Frontend access point:\*\* A mobile-friendly web or app interface opened by scanning a QR code on a food product.  
-\- \*\*Backend API:\*\* An API that receives the product or batch identifier and returns a structured safety record.  
-\- \*\*Data sources and structure:\*\* Standardized JSON records based on product identity, batch information, supplier data, inspection results, recall status, and consumer-facing safety information.
+\- **Frontend access point:\*\* A mobile-friendly web or app interface opened by scanning a QR code on a food product.  
+\- **Backend API:\*\* An API that receives the product or batch identifier and returns a structured safety record.  
+\- **Data sources and structure:\*\* Standardized JSON records based on product identity, batch information, supplier data, inspection results, recall status, and consumer-facing safety information.
 
 The system is designed to support portability by using structured formats such as JSON and CSV. It should allow authorized suppliers, regulators, and researchers to transfer or reuse relevant records across systems while protecting sensitive internal audit data.
 
 \---
 
-\#\# 3\. Quality Objectives
+## 3\. Quality Objectives
 
 The system should meet the following quality goals:
 
@@ -33,7 +33,7 @@ The system should meet the following quality goals:
 
 \---
 
-\#\# 4\. Functional Testing
+## 4\. Functional Testing
 
 | Test Case | Description | Method | Expected Result | Frequency |  
 |---|---|---|---|---|  
@@ -50,7 +50,7 @@ The system should meet the following quality goals:
 
 \---
 
-\#\# 5\. Data Quality Tests
+## 5\. Data Quality Tests
 
 | Data Quality Area | Test | Expected Standard | Action if Failed |  
 |---|---|---|---|  
@@ -63,7 +63,7 @@ The system should meet the following quality goals:
 
 \---
 
-\#\# 6\. Performance Testing
+## 6\. Performance Testing
 
 | Test Case | Description | Tool | Target | Frequency |  
 |---|---|---|---|---|  
@@ -76,7 +76,7 @@ The system should meet the following quality goals:
 
 \---
 
-\#\# 7\. Alarms, Monitoring, and Actions
+## 7\. Alarms, Monitoring, and Actions
 
 | Alarm | Trigger | Monitoring Tool | Action |  
 |---|---|---|---|  
@@ -90,7 +90,7 @@ The system should meet the following quality goals:
 
 \---
 
-\#\# 8\. Ongoing Implementation Plan
+## 8\. Ongoing Implementation Plan
 
 The test plan will be implemented through a mix of manual review, automated testing, scheduled monitoring, and release checks.
 
@@ -98,21 +98,21 @@ The test plan will be implemented through a mix of manual review, automated test
 
 During development, the team will create sample product records that include normal, missing, invalid, recalled, and unrecalled food batches. These records will be used to test both the API and frontend before real data is connected. Backend validation will check required fields, date formats, recall status values, and JSON schema consistency.
 
-\#\#\# Before Each Release
+### Before Each Release
 
 Before each release, the team will manually scan sample QR codes and confirm that the frontend displays the correct consumer-facing information. API tests will confirm that valid records return 200 responses, invalid requests return useful 400 or 404 responses, and protected endpoints reject unauthorized users. The team will also confirm that no restricted audit fields appear in public records.
 
-\#\#\# Continuous Testing
+### Continuous Testing
 
 GitHub Actions or a similar CI/CD workflow should run unit tests and schema validation whenever code is pushed. Future versions should include automated frontend tests for the QR scan flow, product record display, error messages, and export behavior. Backend tests should be expanded using pytest or another automated testing framework.
 
-\#\#\# Scheduled Monitoring
+### Scheduled Monitoring
 
 A daily scheduled job should check recall data freshness, broken QR links, schema validity, and duplicate records. A weekly QA review should inspect a small sample of records manually to confirm that the information remains understandable to consumers and useful for regulators or suppliers.
 
 \---
 
-\#\# 9\. Status Summary
+## 9\. Status Summary
 
 | Area | Current Status | Next Step |  
 |---|---|---|  
@@ -125,7 +125,7 @@ A daily scheduled job should check recall data freshness, broken QR links, schem
 
 \---
 
-\#\# 10\. Team Responsibilities
+## 10\. Team Responsibilities
 
 | Task | Owner |  
 |---|---|  
@@ -138,7 +138,7 @@ A daily scheduled job should check recall data freshness, broken QR links, schem
 
 \---
 
-\#\# 11\. Future Additions
+## 11\. Future Additions
 
 Future versions of the test plan should include:
 
@@ -152,6 +152,6 @@ Future versions of the test plan should include:
 
 \---
 
-\#\# 12\. Conclusion
+## 12\. Conclusion
 
 This test plan defines how the QR-Code Food Safety Information System will maintain trustworthy access to food safety information. Functional tests confirm that users receive the correct product and recall information. Performance tests confirm that the system remains usable during normal and high-demand situations. Alarms and monitoring create a process for detecting problems quickly, while ongoing validation protects the quality and portability of the information structure. As the project develops, this document should be updated whenever the system architecture, data structure, or user access model changes.  
