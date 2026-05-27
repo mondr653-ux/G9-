@@ -12,9 +12,9 @@ The main goal is to ensure that users can access accurate, current, portable, an
 
 The information system has three major parts:
 
-\- **Frontend access point:\*\* A mobile-friendly web or app interface opened by scanning a QR code on a food product.  
-\- **Backend API:\*\* An API that receives the product or batch identifier and returns a structured safety record.  
-\- **Data sources and structure:\*\* Standardized JSON records based on product identity, batch information, supplier data, inspection results, recall status, and consumer-facing safety information.
+\- **Frontend access point:** A mobile-friendly web or app interface opened by scanning a QR code on a food product.  
+\- **Backend API:** An API that receives the product or batch identifier and returns a structured safety record.  
+\- **Data sources and structure:** Standardized JSON records based on product identity, batch information, supplier data, inspection results, recall status, and consumer-facing safety information.
 
 The system is designed to support portability by using structured formats such as JSON and CSV. It should allow authorized suppliers, regulators, and researchers to transfer or reuse relevant records across systems while protecting sensitive internal audit data.
 
